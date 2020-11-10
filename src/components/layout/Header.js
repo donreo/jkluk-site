@@ -11,7 +11,7 @@ const Header = ({ menuDoc }) => {
     return (
       <header className="site-header">
         <RouterLink to="./">
-          <div className="logo">Example Site</div>
+          <div className="logo">Jacky Luk</div>
         </RouterLink>
         <nav>
           <ul>

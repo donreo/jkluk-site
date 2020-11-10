@@ -4,7 +4,8 @@ import {
   ImageGallery,
   ImageHighlight,
   Quote,
-  TextSection
+  TextSection,
+  ImageSlider
 } from './slices';
 
 /**
@@ -25,6 +26,8 @@ const SliceZone = ({ sliceZone }) => (
             return <Quote slice={slice} key={`slice-${index}`} />;
           case ('text_section'):
             return <TextSection slice={slice} key={`slice-${index}`} />;
+          case ('image_slider'):
+            return <ImageSlider slice={slice} key={`slice-${index}`} />;
           default:
             return null;
         }
